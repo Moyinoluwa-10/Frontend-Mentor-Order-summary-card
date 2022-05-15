@@ -1,0 +1,136 @@
+:root{
+
+    /* Colors */
+
+    /* Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+/* Styling Page */
+body{
+    background-image: url(./image/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 120px 0;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* Styling Overall Container */
+#main{
+    background-color: white;
+    border-style: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 33.0%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* Styling Image */
+#img1{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Styling Header */
+h3{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Styling Body */
+p{
+    color: var(--Desaturated-blue);
+}
+
+/* Styling Plan */
+#plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    width: 70%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 25px auto 30px auto;
+    padding: 20px 20px; 
+}
+
+#set{
+    margin-left: -75px;
+    line-height: 25px;
+}
+
+#top{
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+#bottom{
+    color: var(--Desaturated-blue);
+}
+
+#plan>a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+/* Styling Payment */
+#payment{
+    font-weight: 700;
+    background-color: var(--Bright-blue);
+    color: var(--Pale-blue);
+    border-style: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width:70% ;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 20px 10px var(--Pale-blue) ;  
+}
+
+#payment >a{
+    color: var(--Pale-blue);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Styling Order */
+#order >a{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* Responsiveness */
+@media screen and (max-width:480px){
+    body{
+        background-image: url(./image/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 70px 0;
+    }
+
+    #main{
+        width: 90%;
+    }
+
+    #set{
+        margin-left: -54px;
+    }
+}
