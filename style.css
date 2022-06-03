@@ -1,4 +1,4 @@
-:root{
+:root {
 
     /* Colors */
 
@@ -12,14 +12,14 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
-    
+
     /* Edited */
     --Bright-blue-1: hsl(245, 75%, 52%, 0.7);
 
 }
 
 /* Styling Page */
-body{
+body {
     background-image: url(./image/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-color: var(--Pale-blue);
@@ -30,7 +30,7 @@ body{
 }
 
 /* Styling Overall Container */
-#main{
+#main {
     background-color: white;
     border-style: none;
     border-radius: 20px;
@@ -41,14 +41,15 @@ body{
 }
 
 /* Styling Image */
-#img1{
+#img1 {
+    width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 20px 20px 0 0;
 }
 
 /* Styling Header */
-h3{
+h3 {
     color: var(--Dark-blue);
     font-weight: 900;
     font-size: 28px;
@@ -57,12 +58,13 @@ h3{
 }
 
 /* Styling Body */
-p{
+p {
     color: var(--Desaturated-blue);
+    line-height: 26px;
 }
 
 /* Styling Plan */
-#plan{
+#plan {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,32 +76,32 @@ p{
     padding: 20px 20px; 
 }
 
-#set{
-    margin-left: -75px;
+#set {
+    margin-left: -50px;
     line-height: 25px;
 }
 
-#top{
+#top {
     font-weight: 900;
     color: var(--Dark-blue);
 }
 
-#bottom{
+#bottom {
     color: var(--Desaturated-blue);
 }
 
-#plan>a{
+#plan> a {
     color: var(--Bright-blue);
     font-weight: 700;
 }
 
-#plan >a:hover{
+#plan > a:hover {
     text-decoration: none;
     color: var(--Bright-blue-1);
 }
 
 /* Styling Payment */
-#payment{
+#payment {
     font-weight: 700;
     background-color: var(--Bright-blue);
     color: var(--Pale-blue);
@@ -111,42 +113,159 @@ p{
     box-shadow: 0 20px 10px var(--Pale-blue) ;  
 }
 
-#payment:hover{
+#payment:hover {
     background-color: var(--Bright-blue-1);
 }
 
-#payment >a{
+#payment > a {
     color: var(--Pale-blue);
     text-decoration: none;
     font-size: 15px;
 }
 
 /* Styling Order */
-#order >a{
+#order > a {
     color: var(--Desaturated-blue);
     text-decoration: none;
     font-size: 15px;
     font-weight: 900;
 }
 
-#order >a:hover{
+#order > a:hover {
     color: var(--Dark-blue);
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
 /* Responsiveness */
-@media screen and (max-width:450px){
-    body{
+@media screen and (min-width:750px) and (max-width:1150px) {
+    body {
         background-image: url(./image/pattern-background-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
         padding: 70px 0;
     }
 
-    #main{
-        width: 90%;
+    #main {
+        width: 40%;
+    } 
+
+    #container {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 15px 5px 15px;
     }
 
-    #set{
+    h3 {
+        font-size: 25px;
+    }
+
+    p br {
+        display: none;
+    }
+
+    #plan {
+        width: 90%;
+        padding: 20px 10px; 
+    }
+
+    #set {
         margin-left: -10px;
     }
+
+    #payment {
+        width: 85%;
+    }
+    
+}
+
+@media screen and (min-width:550px) and (max-width:750px){
+    body {
+        background-image: url(./image/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 70px 0;
+    }
+
+    #main {
+        width: 60%;
+    } 
+
+    #container {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 15px 5px 15px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p br {
+        display: none;
+    }
+
+    #plan {
+        width: 90%;
+        padding: 20px 10px; 
+    }
+
+    #set {
+        margin-left: -10px;
+    }
+
+    #payment {
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+    body {
+        background-image: url(./image/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 70px 0;
+    }
+
+    #main {
+        width: 90%;
+    } 
+
+    #container {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 15px 5px 15px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p br {
+        display: none;
+    }
+
+    #plan {
+        width: 90%;
+        padding: 20px 10px; 
+    }
+
+    #set {
+        margin-left: -10px;
+    }
+
+    #payment {
+        width: 85%;
+    }
+    
 }
