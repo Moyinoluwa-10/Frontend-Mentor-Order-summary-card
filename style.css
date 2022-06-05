@@ -24,7 +24,6 @@ body {
     background-repeat: no-repeat;
     background-color: var(--Pale-blue);
     font-family: 'Red Hat Display', sans-serif;
-    padding: 120px 0;
     justify-content: center;
     font-size: 16px;
 }
@@ -35,8 +34,8 @@ body {
     border-style: none;
     border-radius: 20px;
     text-align: center;
-    width: 33.0%;
-    margin: 0 auto;
+    width: 400px;
+    margin: 100px auto 50px auto;
     padding-bottom: 30px;
 }
 
@@ -77,7 +76,7 @@ p {
 }
 
 #set {
-    margin-left: -50px;
+    margin-left: -40px;
     line-height: 25px;
 }
 
@@ -108,7 +107,7 @@ p {
     border-style: none;
     border-radius: 10px;
     padding: 15px 20px;
-    width:70% ;
+    width: 70%;
     margin: 0 auto 30px auto;
     box-shadow: 0 20px 10px var(--Pale-blue) ;  
 }
@@ -139,6 +138,7 @@ p {
     font-size: 11px; 
     text-align: center; 
     margin-top: 50px;
+    margin-bottom: 50px;
 }
     
 .attribution a { 
@@ -147,16 +147,15 @@ p {
 
 
 /* Responsiveness */
-@media screen and (min-width:750px) and (max-width:1150px) {
+@media screen and (max-width:500px) {
     body {
         background-image: url(./image/pattern-background-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        padding: 70px 0;
     }
 
     #main {
-        width: 40%;
+        width: 320px;
     } 
 
     #container {
@@ -175,97 +174,16 @@ p {
 
     #plan {
         width: 90%;
-        padding: 20px 10px; 
+        padding: 20px 15px; 
     }
 
     #set {
-        margin-left: -10px;
+        margin-left: -20px;
     }
 
     #payment {
-        width: 85%;
-    }
-    
-}
-
-@media screen and (min-width:550px) and (max-width:750px){
-    body {
-        background-image: url(./image/pattern-background-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding: 70px 0;
-    }
-
-    #main {
-        width: 60%;
+        width: 90%; 
+        padding: 20px 15px; 
     } 
-
-    #container {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 0 15px 5px 15px;
-    }
-
-    h3 {
-        font-size: 25px;
-    }
-
-    p br {
-        display: none;
-    }
-
-    #plan {
-        width: 90%;
-        padding: 20px 10px; 
-    }
-
-    #set {
-        margin-left: -10px;
-    }
-
-    #payment {
-        width: 85%;
-    }
-    
-}
-
-@media screen and (max-width:550px) {
-    body {
-        background-image: url(./image/pattern-background-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding: 70px 0;
-    }
-
-    #main {
-        width: 90%;
-    } 
-
-    #container {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 0 15px 5px 15px;
-    }
-
-    h3 {
-        font-size: 25px;
-    }
-
-    p br {
-        display: none;
-    }
-
-    #plan {
-        width: 90%;
-        padding: 20px 10px; 
-    }
-
-    #set {
-        margin-left: -10px;
-    }
-
-    #payment {
-        width: 85%;
-    }
     
 }
