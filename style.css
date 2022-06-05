@@ -60,6 +60,7 @@ h3 {
 p {
     color: var(--Desaturated-blue);
     line-height: 26px;
+    padding: 0 10px;
 }
 
 /* Styling Plan */
